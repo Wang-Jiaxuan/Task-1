@@ -1,0 +1,10 @@
+
+int main()
+{
+	int num = 1754068;
+	printf("%d\n", num);
+	int n;
+	cin >> n;
+		function(n);
+    return 0;
+}
