@@ -1,0 +1,4 @@
+这是一个生成随机方程的项目。输入数字N并随机生成N个方程式。包括+  -  * /。
+Main.c  is in src file.
+function is in  bin file.
+The result is in Result file.
