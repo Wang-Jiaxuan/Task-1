@@ -1,0 +1,46 @@
+int function(int n) {
+	srand((unsigned)time(0));
+	for (int i = 0; i < n; i++) {
+		int a,b;
+		char os[4];
+		os[0] = '+';
+		os[1] = '-';
+		os[2] = '*';
+		os[3] = '/';
+		double x, y, z,sum;
+		x = rand() % 101;
+		y = rand() % 101;
+		z = rand() % 101;
+		a = rand() % 4;
+		b = rand() % 4;
+		if (a == 0)
+		{if(b==0) sum = x+y+z;
+		else if (b == 1) sum = x + y - z;
+		else if (b == 2) sum = x + y * z;
+		else if (b == 3)  sum = x + y / z;
+		}
+		else if (a == 1)
+		{
+			if (b == 0) sum = x - y + z;
+			else if (b == 1) sum = x -y - z;
+			else if (b == 2) sum = x -y * z;
+			else if (b == 3)  sum = x - y / z;
+		}
+		else if (a == 2)
+		{
+			if (b == 0) sum = x * y + z;
+			else if (b == 1) sum = x * y - z;
+			else if (b == 2) sum = x * y * z;
+			else if (b == 3)  sum = x * y / z;
+		}
+		else if (a == 3)
+		{
+			if (b == 0) sum = x /y + z;
+			else if (b == 1) sum = x /y - z;
+			else if (b == 2) sum = x / y * z;
+			else if (b == 3)  sum = x / y / z;
+		}
+		printf("%lf%c%lf%c%lf=%lf\n", x,os[a], y,os[b], z,sum);
+	}
+	return 0;
+}
